@@ -1,0 +1,133 @@
+/* Example 5 */
+
+.skin {
+  font-family: arial,sans-serif;
+  font-size: 12px;
+  line-height: 15px;
+
+}
+
+.tab-skin {
+
+  background-color: #999999;
+  padding: 10px;
+}
+
+.pane-skin {
+  background-color: #EDEDED;
+  padding: 10px 0;
+}
+
+
+
+#guardian-tab-widget .distribute-tabs > div {
+  
+ 
+  padding: 6px;
+  -webkit-border-radius: 3px 3px 0 0;
+  -moz-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
+  color:white;
+  text-align:center;
+  
+  cursor: pointer;
+}
+
+.highlighted {
+
+  background-color:#EDEDED;
+  color:black !important;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    
+     #guardian-tab-widget .distribute-tabs{
+        display:block;
+         /* Old Syntax */
+        -webkit-box-flex: 3;
+        -moz-box-flex: 3;
+
+        /* New Syntax */
+        -webkit-flex: 3;
+     }
+
+    #guardian-tab-widget {
+  
+     
+      /* Old Syntax */
+      display: -webkit-box;
+      display: -moz-box;
+
+      /* New Syntax */
+      display: -webkit-flexbox;
+    }
+
+   
+    #guardian-tab-widget .distribute-panes {
+        
+         /* Old Syntax */
+        -webkit-box-flex: 1;
+        -moz-box-flex: 1;
+
+        /* New Syntax */
+        -webkit-flex: 1;
+    }
+
+    #guardian-tab-widget .distribute-tabs > div {
+  
+      -webkit-border-radius: 3px 0 3px  3px;
+      -moz-border-radius: 3px 0 3px  3px;
+      border-radius: 3px 0 3px  3px;
+      color:white;
+      margin-bottom: 3px;
+  
+    }
+  
+}
+
+
+@media only screen and (min-width: 768px) {
+     
+     #guardian-tab-widget {
+      width: 90%;
+     }
+
+     #guardian-tab-widget .distribute-tabs {
+        display:flex;
+        -webkit-flex-flow: row wrap;
+        justify-content: space-between;
+        /* Old Syntax */
+       
+        
+        /* New Syntax */
+        
+       
+
+      }
+
+
+
+      #guardian-tab-widget .distribute-tabs > div {
+       
+        /* Old Syntax 
+        -webkit-box-flex: 1;
+        -moz-box-flex: 1;*/
+
+        /* New Syntax 
+        -webkit-flex: 1;*/
+        margin:0 5px;
+        flex:1;
+      }
+  
+}
+
+@media only screen and (max-width: 768px) {
+    
+     .tab-skin {
+        min-width: 50px;
+      }
+  
+}
+
