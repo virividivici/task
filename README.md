@@ -36,21 +36,21 @@ movieCarousel
  
    To override settings:
    
-   movieCarousel.updateCongif ({
+    movieCarousel.updateCongif ({
       url : "http://newurl.com/data.json" ,
       authorizationKey: "newValue",
       sort: {
-               sorting : true/false,
-               asc : true/false, 
-               des : true/false
-             },
+          sorting : true/false,
+          asc : true/false, 
+          des : true/false
+        },
         
        column : number, //number of 'cells' in a row
        current : number,
        currentFocus: '',
        next : ''
    
-   })
+    })
   
  ------------------------------------------------------------------------------
   	       
