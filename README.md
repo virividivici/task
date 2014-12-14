@@ -8,8 +8,8 @@ movieCarousel
  
   Author: Zoe Azhdari Radkani
   Author email: zazhdari@yahoo.com
- 
-  Versy simple and easy to use. Works only by adding a few changes to the html
+  
+   Versy simple and easy to use. Works only by adding a few changes to the html
   and stylesheet. Perfect for when you have a list of long things to display.
   Add a class name of 'carouselMovieCon' to your movie container. Add filter 
   value the rel attribut of the container (i.e. rel="Action").
@@ -29,16 +29,17 @@ movieCarousel
   
   EXAMPLES OF USE:
   
-     <div id="Action" class="carouselMovieCon" rel="Action">
-       <!-- Result goes in here--->
- 		</div>
+    <div id="Action" class="carouselMovieCon" rel="Action">
+      <!-- Result goes in here--->
+    </div>
  
  
-   To override settings: 
+   To override settings:
+   
    movieCarousel.updateCongif ({
-    url : "http://newurl.com/data.json" ,
-       authorizationKey: "newValue",
-       sort: {
+      url : "http://newurl.com/data.json" ,
+      authorizationKey: "newValue",
+      sort: {
                sorting : true/false,
                asc : true/false, 
                des : true/false
