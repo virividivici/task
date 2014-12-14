@@ -42,7 +42,7 @@ movieCarousel
  *      authorizationKey: "newValue",
  *      sort: {
  *              sorting : true/false,
- *              asc : true/false,
+ *              asc : true/false, 
  *              des : true/false
  *            },
  *       
