@@ -8,8 +8,7 @@ var movieCarousel = {
         url : "http://lg-devtest.herokuapp.com/data.json" ,
         authorizationKey: "Bearer u12A8f3Zg",
         sort: {
-                sorting : true,
-                asc : false,
+                asc : true,
                 des : true
             },
         
@@ -44,6 +43,14 @@ var movieCarousel = {
     getHtmlfor: function(items, filterId) {
         var output = '';
         var counter = 0;
+        if(this.settings.sort.asc){
+            items.sort(function(a,b) { return parseFloat(a.imdb) - parseFloat(b.imdb) } );
+            if(this.settings.sort.des){
+               items.reverse(); 
+            }
+        }
+        
+
         for(k=0; k<items.length; k++){
             counter++;
             var item = '<div class="film-container col-lg-4">'
